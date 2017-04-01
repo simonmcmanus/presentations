@@ -1,0 +1,252 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Progressive Enhancement Strategies</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="" class="step slide" data-x="1000" data-y="1000">
+        <h1>Progressive Enhancement Strategies</h1>
+        <hr />
+        <p>London Node User Group (LNUG)</p>
+        <a>@simonmcmanus</a>
+
+    </div>
+
+
+    <div class="step slide"  data-x="1000" data-y="2000">
+        <h1>Separation</h1>
+        <hr />
+        <h2>JS - Interaction</h2>
+        <h2>CSS - Presentation</h2>
+        <h2>HTML - Information</h2>
+    </div>
+
+    <div id="" class="step slide"  data-x="1000" data-y="3000">
+       <h1>Old Twitter</h1>
+       <hr />
+       <ul>
+         <li>Download markup</li>
+         <li>Download 2mb of JS</li>
+         <li>Render 140 characters</li>
+      </ul>
+   </div>
+
+    <div id="" class="step slide hidden"  data-x="1000" data-y="4000">
+      <h1>Why</h1>
+
+      <q>&ldquo;Everyone, including Google has js turned on.&rdquo;</q>
+
+    </div>
+
+
+    <div id="" class="step slide"  data-x="1000" data-y="5000">
+        <h1>Google</h1>
+        <hr />
+        <ul>
+            <li>Suggests degrading gracefully</li>
+            <li>Google Mobilizer</li>
+            <li>Cares about load times</li>
+        </ul>
+    </div>
+
+    <div id="" class="step slide"  data-x="1000" data-y="6000">
+        <h1>Sharing</h1>
+        <br />
+        <p> Share js-required app on:</p>
+        <hr />
+        <ul>
+          <li>Slack</li>
+          <li>Facebook</li>
+        </ul>
+        <br />
+        <br />
+
+
+    </div>
+
+    <div id="" class="step slide"  data-x="1000" data-y="7000">
+        <h1>Hold up..</h1>
+        <q>Why are you trying to work round something that works really well?</q>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="8000">
+        <h1>Start on the server</h1>
+        <hr />
+        <ul>
+          <li>Routes</li>
+          <li>Templates</li>
+          <li>Data</li>
+        </ul>
+    </div>
+
+
+    <div id="pjax" class="step slide"   data-x="1000" data-y="9000">
+        <code>
+       .--.
+      /    \
+     ## a  a
+     (   '._)
+      |'-- |
+    _.\___/_   ___pjax___
+  ."\> \Y/|<'.  '._.-'
+ /  \ \_\/ /  '-' /
+ | --'\_/|/ |   _/
+ |___.-' |  |`'`
+   |     |  |
+   |    / './
+  /__./` | |
+     \   | |
+      \  | |
+      ;  | |
+      /  | |
+jgs  |___\_.\_
+     `-"--'---'
+    </code>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="10000">
+        <h1>REST</h1>
+        <hr />
+            <ul class="list">
+                <li>Resources</li>
+                <li>Representations</li>
+            </ul>
+    </div>
+
+    <div id="evolution" class="step slide"  data-x="1000" data-y="11000">
+    </div>
+
+
+    <div id="" class="step slide"   data-x="1000" data-y="12000">
+        <h1>Mustard Test</h1>
+        <hr />
+        <ul>
+          <li>Basic</li>
+          <li>Enhanced</li>
+        </ul>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="13000">
+      <code>
+        if(history.pushState) {
+            ..
+        }
+      </code>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="14000">
+        <h1>Share</h1>
+        <hr />
+        <ul>
+          <li>Routes</li>
+          <li>Templates</li>
+          <li>Data?</li>
+        </ul>
+    </div>
+
+
+    <div id="" class="step slide"   data-x="1000" data-y="15000">
+        <h1>Browserify/</h1>
+        <h1>Duo.js</h1>
+        <hr />
+        <ul>
+          <li>Share templates</li>
+        </ul>
+    </div>
+
+
+    <div id="" class="step slide"   data-x="1000" data-y="16000">
+        <h1>Components</h1>
+        <code>
+        - components
+            - station
+                - station.js
+                - station.scss
+                - station.jade
+            - search
+                - search.js
+                - search.scss
+                - search.jade
+        </code>
+    </div>
+
+
+    <div id="" class="step slide"   data-x="1000" data-y="17000">
+        <h1>Pages</h1>
+        <code>
+        - pages
+            - home
+                - home.js
+                - home.scss
+                - home.jade
+            - station
+                - station.js
+                - station.scss
+                - station.jade
+        <code>
+
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="18000">
+        <h1>Page.JS</h1>
+        <a href="http://visionmedia.github.io/page.js/">http://visionmedia.github.io/page.js</a>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="19000">
+        <h1>Pageify</h1>
+        <a href="http://github.com/simonmcmanus/pageify">http://github.com/simonmcmanus/pageify</a>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="20000">
+        <h1>ChangePath</h1>
+        <a href="http://github.com/simonmcmanus/changepath">http://github.com/simonmcmanus/changepath</a>
+
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="21000">
+        <h2>The web is a work in progress.</h2>
+        It will continue to grow in weird and wonderful ways.
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="22000">
+       <h2><a href="http://enhanceconf.com">EnhanceConf.com</a></h2>
+       <a href="http://twitter.com/enhanceconf">@EnhanceConf</a>
+    </div>
+
+</div>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
