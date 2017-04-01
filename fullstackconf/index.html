@@ -1,0 +1,327 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Progressive Enhancement Strategies</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="" class="step slide" data-x="1000" data-y="000">
+        <h1>Progressive Enhancement Strategies</h1>
+        <hr />
+        <a href="http://twitter.com/simonmcmanus">@simonmcmanus</a><br />
+        <a class="docked" href="mailto:mcmanus.simon@gmail.com">mcmanus.simon@gmail.com</a>
+
+    </div>
+
+
+    <div class="step slide"  data-x="1000" data-y="1000">
+        <h1>Separation </h1>
+        <ul>
+          <li>JS - Interaction</li>
+          <li>CSS - Presentation</li>
+          <li>HTML - Information</li>
+        </ul>
+    </div>
+
+
+
+   <div class="step slide"  data-x="1000" data-y="2000">
+       <h1>BFED</h1>
+       <p style="font-size:2em;margin:1em 0;line-height:1em;">
+       <quote >
+           “As a Lead JavaScript Engineer, I try to get my team to write as little JavaScript as possible.”
+           — James Norton
+        </quote>
+        </p>
+        <a href="http://thebfed.com/" class="docked">The boring front-end developer, by Adam Silver</a>
+    </div>
+
+    <div id="" class="step slide hidden"  data-x="1000" data-y="3000">
+      <h1>Why</h1>
+
+      <q>&ldquo;Everyone, including Google has js turned on.&rdquo;</q>
+
+    </div>
+
+
+    <div id="" class="step slide"  data-x="1000" data-y="4000">
+        <h1>Google</h1>
+        <ul>
+            <li><a href="http://googlewebmastercentral.blogspot.co.uk/2014/05/understanding-web-pages-better.html">Understanding Web pages</a></li>
+            <li><a href="https://developers.google.com/webmasters/ajax-crawling/docs/learn-more">Ajax Crawling</a> - <a href="http://googlewebmastercentral.blogspot.co.uk/2015/10/deprecating-our-ajax-crawling-scheme.html">deprecated</a></li>
+            <li><a href="http://www.google.com/gwt/n">Google Mobilizer</a></li>
+            <li>Cares about load times</a></li>
+        </ul>
+    </div>
+
+    <div id="" class="step slide"  data-x="1000" data-y="5000">
+        <h1>Sharing</h1>
+        <br />
+        <p> Share js-required app on:</p>
+        <ul>
+            <li>Facebook</li>
+            <li>Slack</li>
+        </ul>
+        <br />
+        <br />
+    </div>
+
+    <div id="" class="step slide"  data-x="1000" data-y="6000">
+        <h1>Hold up..</h1>
+        <q>Why are you trying to work round something that works really well?</q>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="7000">
+        <h1>Start on the server</h1>
+        <ul>
+          <li>Routes</li>
+          <li>Data</li>
+          <li>Templates</li>
+        </ul>
+    </div>
+
+
+
+
+    <!-- <div id="pjax" class="step slide"   data-x="1000" data-y="10000">
+        <code>
+       .--.
+      /    \
+     ## a  a
+     (   '._)
+      |'-- |
+    _.\___/_   ___pjax___
+  ."\> \Y/|<'.  '._.-'
+ /  \ \_\/ /  '-' /
+ | --'\_/|/ |   _/
+ |___.-' |  |`'`
+   |     |  |
+   |    / './
+  /__./` | |
+     \   | |
+      \  | |
+      ;  | |
+      /  | |
+jgs  |___\_.\_
+     `-"--'---'
+    </code>
+    </div> -->
+
+    <div id="" class="step slide"   data-x="1000" data-y="8000">
+        <h1>Share</h1>
+        <ul>
+          <li>Routes</li>
+          <li>Data</li>
+          <li>Templates</li>
+        </ul>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="9000">
+        <h1>Components</h1>
+        <code>
+        - pages
+            - home
+                - home.js
+                - home.scss
+                - home.jade
+            - station
+                - station.js
+                - station.scss
+                - station.jade
+        </code>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="10000">
+        <h1>Pages</h1>
+        <code>
+        - pages
+            - home
+                - home.js
+                - home.scss
+                - home.jade
+            - station
+                - station.js
+                - station.scss
+                - station.jade
+        </code>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="12000">
+        <h1>Module Bundling</h1>
+        <ul>
+          <li><a href="http://browserify.org/">Browserify</a></li>
+          <li><a href="https://webpack.github.io/">Webpack</a></li>
+          <li><a href="duojs.org">Duo.js</a></li>
+        </ul>
+    </div>
+
+    <div id="evolution" class="step slide"  data-x="1000" data-y="13000">
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="14000">
+        <h1>Baselines &amp;</h1>
+        <h1>Mustard Test</h1>
+        <ul>
+          <li>Basic</li>
+          <li>Enhanced</li>
+        </ul>
+        <a href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard" class="docked">Cutting the mustard</a>
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="15000">
+      <code>
+        if(history.pushState) {
+            ..
+        }
+      </code>
+
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="16000">
+        <h1>Routing</h1>
+        <h2>Page.js</h2>
+        <code>
+page('/', index)
+page('/user/:user', show)
+page('/user/:user/edit', edit)
+page('/user/:user/album', album)
+page('/user/:user/album/sort', sort)
+page('*', notfound)
+page()
+        </code>
+        <a href="http://visionmedia.github.io/page.js/" class="docked">http://visionmedia.github.io/page.js</a>
+    </div>
+
+
+    <div id="lnug" class="step slide"   data-x="1000" data-y="17000" >
+        <br />
+        <br />
+        <br />
+        <img src="./img/lnug.png" width=700px />
+        <br />
+        <br />
+        <br />
+        <a href="http://lnug.org"  class="docked">http://lnug.org</a>
+    </div>
+
+
+    <div id="" class="step slide"   data-x="1000" data-y="18000">
+        <h1>Pageify</h1>
+        <hr />
+        <a href="http://github.com/simonmcmanus/pageify" class="docked">http://github.com/simonmcmanus/pageify</a>
+    </div>
+
+
+
+
+
+    <div id="" class="step slide"   data-x="1000" data-y="19000">
+        <h1>Sizlate</h1>
+        <p>
+        <a href="http://github.com/simonmcmanus/sizlate" class="docked">http://github.com/simonmcmanus/sizlate</a>
+    </p>
+        <code class='code'>
+
+var selectors = {
+'#conference': 'FullStack'
+};
+var html = '&lt;div id="conference"&gt;&lt;/div&gt;';
+var out = sizlate.render(html, selectors);
+//  &lt;div id="conference"&gt;FullStack&lt;/div&gt;
+    </code>
+    </div>
+
+
+
+<div id="" class="step slide"   data-x="1000" data-y="20000">
+    <h1>Speclate</h1>
+    <code>
+'/index.html': {
+    page: 'home',
+    spec: {
+        '.ticket': {
+            component: 'ticket',
+            data: {
+                '.nextmeetup': '12th October 2014',
+                '.venue': 'Royal Albert Hall'
+            }
+        },
+        '.content': {
+            component: 'speaker',
+            data: require('./data/speaker-selectors')
+        }
+    }
+}
+    </code>
+    <a href="http://github.com/simonmcmanus/speclate" class="docked">http://github.com/simonmcmanus/speclate</a>
+</div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="21000">
+        <h2>The web is a work in progress</h2>
+        <hr />
+        It will continue to grow in weird and wonderful ways.
+    </div>
+    <div id="" class="step slide"   data-x="1000" data-y="22000">
+       <img src="./img/logo-colour.png" width=700px />
+       <hr />
+       <h2 style="font-size:1em;padding-left:0px;margin-bottom:50px;">4th March 2016 - London</h2>
+
+       <a href="http://twitter.com/enhanceconf">@EnhanceConf</a>
+       <a href="http://enhanceconf.com" class="docked">http://enhanceconf.com</a><br />
+    </div>
+
+
+    <div id="" class="step slide"   data-x="1000" data-y="22000">
+        <img src="./img/logo-colour.png" width=700px />
+        <hr />
+        <h1> Call for Proposals</h1>
+       <!-- <img src="http://enhanceconf.com/images/speakers/philhawksworth.jpg"  width=180px />
+       <img src="http://enhanceconf.com/images/speakers/forbeslindesay.jpg" width=180px />
+       <img src="http://enhanceconf.com/images/speakers/adictio.png" width=180px />
+       <img src="https://pbs.twimg.com/profile_images/1269730540/Unshaven_100_400x400.png" width=180px /> -->
+       <a href="http://enhanceconf.com/cfp" class="docked">http://enhanceconf.com/cfp</a><br />
+    </div>
+
+    <div id="" class="step slide"   data-x="1000" data-y="23000">
+        <h1>Thankyou</h1>
+    </div>
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) {
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>

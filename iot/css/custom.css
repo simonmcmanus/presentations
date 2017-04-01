@@ -1,0 +1,109 @@
+body {
+  background: white;
+}
+
+h1{
+    font-family: 'Londrina Outline', cursive;
+    font-size: 3em;
+    color: black;
+    line-height: 1.5em;
+    margin: 10px;
+
+}
+img {
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+img.noborder {
+  border: 0;
+}
+
+.switch .logo {
+position: relative;
+top: -200px;
+}
+
+ul.bullet {
+  list-style: bullets;
+}
+ul.bullets{
+  margin-left: 60px;
+  list-style: inherit;
+}
+.switch h1{
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
+
+.step.radio {
+  position: relative;
+  font-size: 1.5em;
+
+}
+.contact  h1{
+  position: relative;
+  right: 400px;
+}
+
+.warning {
+  color: red;
+  top: 4em;
+  position: relative;
+  font-size: 2em;
+}
+
+.radio {
+  position:relative;
+  top: 50px;
+  left: 170px;
+}
+.motion  h1{
+  position: relative;
+  top: -300px;
+}
+.temp   h1,
+.sockets   h1{
+  position: relative;
+  top: -250px;
+}
+
+div.tiny {
+  font-size: 10px;
+}
+.rock h1 {
+  font-family: arial;
+  font-size: 1.5em;
+  left: 211px;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  position: relative;
+  top: 20px;
+  background: none;
+}
+ul{
+
+
+  line-height: 2em;
+  margin-left: 2em;
+}
+
+ul li {
+  list-style:initial;
+  margin-left: 30px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+
+.impress-enabled .step.future {
+  opacity: 0;
+}
+
+
